@@ -35,7 +35,7 @@ const gambar = ref('')
 const deskripsi = ref('')
 
 async function tambahProduk() {
-  await fetch('https://c2f11ffc-3860-4d52-8545-1615da252451-00-qwyg3qd01o5c.sisko.replit.dev/', {
+  await fetch('https://c2f11ffc-3860-4d52-8545-1615da252451-00-qwyg3qd01o5c.sisko.replit.dev/products', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({

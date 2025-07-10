@@ -22,7 +22,7 @@ const products = ref([])
 const cart = useCartStore()
 
 onMounted(async () => {
-  const res = await fetch('https://c2f11ffc-3860-4d52-8545-1615da252451-00-qwyg3qd01o5c.sisko.replit.dev/')
+  const res = await fetch('https://c2f11ffc-3860-4d52-8545-1615da252451-00-qwyg3qd01o5c.sisko.replit.dev/products')
   products.value = await res.json()
 })
 
